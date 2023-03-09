@@ -1,0 +1,80 @@
+The first experiment was designed to test the hypothesis that the sensory 
+feedback delay will degrade the performance of the network.
+
+To examine the reason for the xxx, a second experiemtn was performed in which we
+examined the conditions necessary for the prediction ...
+
+
+
+0. The effect of Sensory feedback delay in the motor control
+
+A network trained in no delay condition will be tested in 5 different delay 
+conditions which are no, 1, 2, 3, and 4 steps delay.
+
+All the networks are trained with no sensory feedback delay
+
+		Delay0	Delay1	Delay2	Delay3	Dealy4
+----------------------------------------------
+Net#1	5000
+Net#2	5000
+...		...
+Net#10	5000
+----------------------------------------------
+avrg	5000	4300	500		..		...
+
+(*) Draw the graph
+
+** To overcome this delay, we can think the facilitation rate!!!
+
+1. The effect of the facilitation rate in no sensory feedback dely condition
+
+We can use the table that was made in 'the facilitation rate vs. learning speed'
+
+(*) Draw the graph
+
+2. Facilitation rate vs. learning speed  <<<<<<<<<- I'm doing this
+
+- All neurons share a same facilitation rate value
+- Change facilitatin rates from 0 to 1 by increasing 0.1
+- Repeat this under delay conditions from 0 step to 5 steps
+
+success: balance the pole until 5,000 steps (50 seconds)
+
+		facilitatio rate			
+		0		0.1  ----    0.9	1
+delay	
+0		gen#	gen#
+1
+2
+...
+5
+-----------------------------------------
+Repeat this 10 times and average them.
+--> the relationship between the facilitation rate and learning speed.
+
+(*) Show the facilitation rate makes the network learn faster than the case of 
+no facilitation.
+
+3. Evolve the facilitation rate (0 <= f <= 1)
+
+Show networks trained more sensory feedback delay is more robust the black-out
+condition.
+
+			b.o
+			0		5		10		20		40		60		80
+-----------------------------------------------------------------
+Delay0		Net#1  step#
+			Net#2
+			...
+Delay1		Net#1  step#
+			Net#2
+			...
+...
+Delay4		Net#1  step#
+			Net#2
+			...
+(*) Delay3 or 4 has the better than the others especially in long black-out 
+duration.
+
+4. Evolve the facilitation or decaying rate (-1 <= fd <= 1) ---> maybe next??
+
